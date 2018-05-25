@@ -8,6 +8,24 @@ Flask-json-schema is available on PyPI and can be installed with
 
     pip install flask-json-schema
 
+The extension can either be initialized directly:
+
+```python
+from flask import Flask
+from flask_json_schema import JsonSchema
+
+app = Flask(__name__)
+schema = JsonSchema(app)
+```
+
+Or through the factory method:
+
+```python
+schema = JsonSchema()
+
+app = Flask(__name__)
+schema.init_app(app)
+
 ## Quick example
 
 ```python
