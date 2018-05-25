@@ -2,6 +2,12 @@
 
 This extension makes it easy to validate JSON data that is sent to your Flask app using the jsonschema spec
 
+## Setup
+
+Flask-json-schema is available on PyPI and can be installed with
+
+    pip install flask-json-schema
+
 ## Quick example
 
 ```python
@@ -40,5 +46,8 @@ app.run('0.0.0.0', 5000, debug=True)
 See `example.py` for the source code
 
 
+## Links
 
+* [Source Code](https://github.com/sanjeevan/flask-json-schema)
+* [Issues](https://github.com/sanjeevan/flask-json-schema/issues)
 
