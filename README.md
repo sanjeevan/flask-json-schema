@@ -25,6 +25,7 @@ schema = JsonSchema()
 
 app = Flask(__name__)
 schema.init_app(app)
+```
 
 ## Quick example
 
