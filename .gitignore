@@ -1,0 +1,27 @@
+*.py[cod]
+*.swp
+*._*
+.DS_Store
+
+# C extensions
+*.so
+*.geojson
+# Packages
+build
+eggs
+
+# Setuptools distribution folder.
+/dist/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+
+# Installer logs
+pip-log.txt
+
+# virtual env
+venv
+
+# sphinx docs
+docs/_build
+
