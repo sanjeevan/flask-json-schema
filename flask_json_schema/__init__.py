@@ -9,7 +9,7 @@ class JsonValidationError(Exception):
 
 class JsonSchema(object):
 
-    def __init__(self, app):
+    def __init__(self, app=None):
         self.app = app
         self.config = {}
         if app is not None:
