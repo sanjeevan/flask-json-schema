@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="flask-json-schema",
-    version="0.0.2",
+    name="Flask-json-schema",
+    version="0.0.3",
     author="Sanjeevan Ambalavanar",
     author_email="sanjeevan@pureparadox.com",
     license="MIT",

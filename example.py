@@ -18,9 +18,9 @@ todos = []
 def validation_error(e):
     return jsonify({ 'error': e.message, 'errors': [validation_error.message for validation_error  in e.errors]})
 
-@app.route('/todo', methods=['GET', 'POST'])
+@app.route('/todo/', methods=['GET', 'POST'])
 @schema.validate(todo_schema)
-def create_message():
+def create_message(id):
     if request.method == 'POST':
         todos.append( request.get_json() )
         return jsonify({ 'success': True, 'message': 'Created todo' })
