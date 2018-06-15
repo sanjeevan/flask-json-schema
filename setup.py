@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="Flask-json-schema",
-    version="0.0.3",
+    version="0.0.4",
     author="Sanjeevan Ambalavanar",
     author_email="sanjeevan@pureparadox.com",
     license="MIT",
