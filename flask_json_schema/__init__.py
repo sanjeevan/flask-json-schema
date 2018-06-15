@@ -24,7 +24,7 @@ class JsonSchema(object):
     def validate(self, schema, methods=None, format_checker=None):
         def wrapper(fn):
             @wraps(fn)
-            def decorated(*args, methods=None, format_checker=None, **kwargs):
+            def decorated(methods=None, format_checker=None, *args, **kwargs):
                 validator_kwargs = {
                     'schema': schema,
                     'format_checker': format_checker if format_checker else self.config.get('JSON_SCHEMA_FORMAT_CHECKER')
