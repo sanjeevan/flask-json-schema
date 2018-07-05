@@ -12,6 +12,7 @@ class JsonSchema(object):
     def __init__(self, app=None):
         self.app = app
         self.config = {}
+        self.validator_cls = None
         if app is not None:
             self.init_app(app)
 
@@ -36,7 +37,7 @@ class JsonSchema(object):
 
                 # check jsonschema
                 if request.method in methods:
-                    validator_cls = validator_for(schema)
+                    validator_cls = self.validator_cls if self.validator_cls else validator_for(schema)
                     validator = validator_cls(**validator_kwargs)
                     errors = list(validator.iter_errors(request.get_json()))
                     if errors:
